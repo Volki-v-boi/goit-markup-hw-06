@@ -124,12 +124,14 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
+  /* margin-right: 76px; */
+  padding: 17px 0;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo-item {
@@ -143,8 +145,8 @@ ul {
 }
 
 .header-menu-list {
-  display: flex;
-  gap: 40px;
+  display: none;
+  /* gap: 40px; */
 }
 
 .header-menu-link {
@@ -181,8 +183,8 @@ ul {
 }
 
 .header-contacts-list {
-  display: flex;
-  gap: 40px;
+  display: none;
+  /* gap: 40px; */
 }
 
 .header-contacts-link {
@@ -193,6 +195,13 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.open-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
 /*? ____________________________ */
 
 /*? _____________Hero___________ */
@@ -853,6 +862,24 @@ ul {
     max-width: 768px;
   }
 
+  .header-menu-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 120px;
+  }
+
+  .header-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
   .hero {
     padding: 112px 0;
     background-image: linear-gradient(
@@ -881,6 +908,10 @@ ul {
 
   .hero-btn {
     margin-top: 36px;
+  }
+
+  .open-menu-btn {
+    display: none;
   }
 
   .features-list {
@@ -914,6 +945,18 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header-menu-list {
+    margin-left: 76px;
+  }
+  .header-contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 
   .hero {
     padding: 188px 0;
@@ -942,7 +985,6 @@ ul {
   }
 
   .features-list {
-    justify-content: ;
     gap: 24px;
   }
 
